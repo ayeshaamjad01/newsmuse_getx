@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primary,
-        title: Text('New Muse',
+        title: Text('News Muse',
             style: TextStyle(color: Colors.white, fontSize: 20)),
       ),
     );
