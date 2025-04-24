@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:newsmuse/core/config/theme.dart';
 import 'package:newsmuse/screens/home_screen.dart';
 
 void main() {
@@ -14,10 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
         title: 'News Muse',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
+        theme: lightTheme,
+        themeMode: ThemeMode.system,
+        darkTheme: darkTheme,
         home: const HomeScreen());
   }
 }
